@@ -20,15 +20,18 @@ Project is based on [Gitter8](http://www.foundweekends.org/giter8/) templating e
 
 Project contains couple of variables that you have to accept or change during (you will be prompted to change them):
 
-- name = scala-akka-seed-change-me
-- namespace = kubertnetes-namespace-change-me
-- akka_version=2.5.17
-- akka_http_version=10.1.5
-- scala_test_version=3.0.5
-- jackson_version=2.8.6
-- log4j_version=1.2.17
-- package=ch.tamedia
-- nexus=https://your.nexus.url
+name = golang-seed-change-me
+namespace = kubertnetes-namespace-change-me
+
+kafkatopic = USR.EVENT.blackbeard.article.view
+kafkabrokers = worker.i.dev.tda.io:9092
+kakfaconsumergroup = flint_test
+prometheusendpoint = localhost:8081
+redishost = localhost
+redisport = 6379
+redisdb = 0
+rediskey= users
+redisusergroups = user_groups
 
 Note that files `tdaci.env` and `tdaci.yml` can be ignored.
 
